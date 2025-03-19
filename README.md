@@ -11,6 +11,10 @@ This is a pure Elixir implementation of [ThumbHash](https://github.com/evanw/thu
 
 Which only implements the encoding-related APIs, without decoding functionality. **During the alpha release phase, the API may undergo incompatible changes.**
 
+for decoding you can use the hooks example as well as adding the data-thumbhash={@thumbhash} to the corresponding img element ex.  <img class="pt-1" id="main_image" src={@url} width="150" height="100" data-thumbhash={@thumbhash} phx-hook="ThumbHash" />
+
+you will also need to include the library in your app js via 'npm i thumbhash' or dump the lib in vendor
+
 ## Preview
 
 | File       |                                      Original                                       |                                           Placeholder                                            | base64                         |
